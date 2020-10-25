@@ -100,7 +100,7 @@ jsPsych.plugins['pavlovia'] = (function() {
 				break;
 
 			case 'finish':
-				const data = jsPsych.data.get().csv();
+				const data = jsPsych.data.get().filter({test_part: "test"}).csv();
 				_finish(trial, data);
 				break;
 

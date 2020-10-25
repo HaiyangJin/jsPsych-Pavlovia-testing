@@ -123,7 +123,7 @@
 		var pavlovia_finish = {
 			type: "pavlovia",
 			command: "finish",
-			participantId: "JSPSYCH-DEMO"
+		// 	participantId: subject_id
 		};
 		timeline.push(pavlovia_finish);
 
@@ -134,7 +134,7 @@
 				// jsPsych.data.displayData();
 				var filename = subject_id+'.csv';
 				// jsPsych.data.get().localSave('csv', filename);
-				// jsPsych.data.get().filter({collect: "TRUE"}).localSave('csv', filename);
+				// jsPsych.data.get().filter({test_part: "test"}).localSave('csv', filename);
 			}
 		});
 
